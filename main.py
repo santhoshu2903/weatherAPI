@@ -17,4 +17,5 @@ async def get_weather(location: str):
     if response.status_code == 200:
         return response.json()
     else:
+        #if input is not in correct format too
         raise HTTPException(status_code=404, detail="Weather data not found")
