@@ -11,7 +11,7 @@ async def get_weather(location: str):
     params = {
         "q": location,
         "appid": WEATHER_API_KEY,
-        "units": "metric"  # or 'imperial' for Fahrenheit
+        "units": "metric" 
     }
     response = requests.get(BASE_URL, params=params)
     if response.status_code == 200:
