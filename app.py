@@ -3,7 +3,7 @@ import requests
 
 FASTAPI_BACKEND_URL = "http://localhost:8000/weather/"
 
-st.title('Weather Forecast Application')
+st.title('test weather api ')
 
 location = st.text_input('Enter a location:', '')
 
